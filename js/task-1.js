@@ -17,10 +17,10 @@ function makeTransaction(quantity, pricePerDroid, customerCredits){
     let totalPrice = pricePerDroid * quantity; // toplam sipariş tutarı
 
     if(totalPrice > customerCredits){
-        return console.log("Insufficient funds!"); 
+        return "Insufficient funds!"; 
     } 
     
-    return console.log(`You ordered ${quantity} droids worth ${totalPrice} credits!`);
+    return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 
 }
 
